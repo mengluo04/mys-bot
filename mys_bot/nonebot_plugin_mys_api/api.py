@@ -63,7 +63,7 @@ STAR_RAIL_MONTH_INFO_API = (
     f"{OLD_URL}/event/srledger/month_info"  # 崩坏：星穹铁道开拓月历
 )
 SIGN_API = f"{OLD_URL}/event/luna/sign"
-ZZZ_SIGN_URL="https://act-nap-api.mihoyo.com/event/luna/zzz/sign"
+ZZZ_SIGN_URL = "https://act-nap-api.mihoyo.com/event/luna/zzz/sign"
 # Unknown function API
 BBS_VERIFICATION_API = (
     f"{NEW_BBS_URL}/game_record/app/card/wapi/createVerification?is_high=false"
@@ -518,7 +518,7 @@ class MysApi:
                 "sr_sign",
                 "zzz_sign",
             ],
-            region: Optional[str],
+            region: str = "",
             role_uid: str = "0",
             extra_headers: Optional[dict[str, Any]] = None,
             **kwargs,

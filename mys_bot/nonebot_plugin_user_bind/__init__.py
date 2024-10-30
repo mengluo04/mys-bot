@@ -175,6 +175,7 @@ async def check_qrcode():
                 game_info = await mys_api.call_mihoyo_api(
                     api="game_record",
                     mys_id=mys_id,
+
                 )
                 logger.debug(f"Game info: {game_info}")
                 if game_info is None:
